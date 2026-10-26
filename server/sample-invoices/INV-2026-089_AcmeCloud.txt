@@ -1,0 +1,14 @@
+INVOICE DOCUMENT — OFFICIAL RECORD
+==================================================
+Invoice ID:      INV-2026-089
+Vendor Name:     Acme Cloud Corp
+Issue Date:      October 18, 2026
+Due Date:        2026-11-15
+--------------------------------------------------
+Line Items:
+1. Dedicated H100 Node Cluster (Oct)    $3,800.00
+2. Enterprise Egress & Snapshots          $450.00
+--------------------------------------------------
+TOTAL AMOUNT DUE:                       $4,250.00
+Payment Terms:   Net 30 (ACH Transfer)
+==================================================

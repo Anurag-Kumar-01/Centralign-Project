@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CentrAlign AI | Autonomous Task Worker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Palette remap: the app's utility classes (violet/emerald/...) now resolve to the Ledger Felt palette.
+      const mix=(a,b,t)=>{const p=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));const x=p(a),y=p(b);return '#'+x.map((v,i)=>Math.round(v+(y[i]-v)*t).toString(16).padStart(2,'0')).join('')};
+      const scale=b=>({50:mix(b,'#ffffff',.9),100:mix(b,'#ffffff',.8),200:mix(b,'#ffffff',.6),300:mix(b,'#ffffff',.4),400:mix(b,'#ffffff',.18),500:b,600:mix(b,'#000000',.15),700:mix(b,'#000000',.35),800:mix(b,'#000000',.55),900:mix(b,'#000000',.7),950:mix(b,'#000000',.82)});
+      tailwind.config={theme:{extend:{
+        colors:{violet:scale('#F2B632'),indigo:scale('#E8833A'),cyan:scale('#6FD3CB'),emerald:scale('#5BE3A0'),amber:scale('#FF8F3F'),rose:scale('#FF5C7A'),
+          zinc:{50:'#F6F2E4',100:'#EAE6D6',200:'#D3D3C3',300:'#B3BAAC',400:'#8E9C94',500:'#6C7F77',600:'#4F625B',700:'#38494A',800:'#243736',900:'#16282A',950:'#0C1B1A'}},
+        fontFamily:{sans:['Instrument Sans','sans-serif'],display:['Bricolage Grotesque','sans-serif'],mono:['DM Mono','monospace']}}}};
+    </script>
+  </head>
+  <body class="bg-[#0B1A19] text-zinc-100 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
